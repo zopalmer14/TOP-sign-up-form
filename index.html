@@ -9,9 +9,45 @@
 </head>
 <body>
     <div id="screen_container">
-        <div id="calc_container">
-            test
-        </div>
+        <form id="form_container" action="index.html" method="post">
+            <h2>Let's do this!</h2>
+
+            <div class="form_row">
+                <div class="form_section">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name"/>
+                </div>
+
+                <div class="form_section">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name"/>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="form_section">
+                    <label for="user_email">Email</label>
+                    <input type="text" name="email" id="user_email"/>
+                </div>
+
+                <div class="form_section">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" name="phone_number" id="phone_number"/>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="form_section">
+                    <label for="user_password">Password</label>
+                    <input type="text" name="password" id="user_password"/>
+                </div>
+
+                <div class="form_section">
+                    <label for="confirm_password">Password</label>
+                    <input type="text" name="confirm_password" id="confirm_password"/>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>
