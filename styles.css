@@ -1,10 +1,20 @@
 
+@font-face {
+    font-family: Norse;
+    font-weight: bold;
+    src: url('Norse-Bold.otf') format("opentype");
+}
+
 body {
     background-color: white;
     color: black;
     font-family: Garamond;
     font-size: 12px;
     margin: 0;
+}
+
+a {
+    color: white;
 }
 
 #screen_container {
@@ -14,8 +24,48 @@ body {
 }
 
 #img_container {
-    background-color: green;
+    color: white;
+    background-image: url('leafy_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     flex: 2 2 0;
+}
+
+#logo_container {
+    flex: 2 2 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#logo_banner {
+    padding: 1vw 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Norse', sans-serif;
+    font-size: 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo_banner img {
+    height: 7.5vw;
+}
+
+#citation_container {
+    margin-bottom: 10px;
+    flex: 1 1 0;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
 #info_container {
