@@ -32,45 +32,47 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
     
-            <form id="form_container" action="index.html" method="post">
-                <h3>Let's do this!</h3>
-    
-                <div class="form_row">
-                    <div class="form_section">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name"/>
+            <div id="form_background">
+                <form id="form_container" action="" method="get">
+                    <h3>Let's do this!</h3>
+        
+                    <div class="form_row">
+                        <div class="form_section">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name"/>
+                        </div>
+        
+                        <div class="form_section">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name"/>
+                        </div>
                     </div>
-    
-                    <div class="form_section">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name"/>
+        
+                    <div class="form_row">
+                        <div class="form_section">
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" name="email" id="user_email"/>
+                        </div>
+        
+                        <div class="form_section">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="text" name="phone_number" id="phone_number"/>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="form_row">
-                    <div class="form_section">
-                        <label for="user_email">EMAIL</label>
-                        <input type="text" name="email" id="user_email"/>
+        
+                    <div class="form_row">
+                        <div class="form_section">
+                            <label for="user_password">PASSWORD</label>
+                            <input required type="password" name="password" id="user_password"/>
+                        </div>
+        
+                        <div class="form_section">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input required type="password" name="confirm_password" id="confirm_password"/>
+                        </div>
                     </div>
-    
-                    <div class="form_section">
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="text" name="phone_number" id="phone_number"/>
-                    </div>
-                </div>
-    
-                <div class="form_row">
-                    <div class="form_section">
-                        <label for="user_password">PASSWORD</label>
-                        <input type="text" name="password" id="user_password"/>
-                    </div>
-    
-                    <div class="form_section">
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="text" name="confirm_password" id="confirm_password"/>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
 
             <div id="submit_options">
                 <button id="create_account">Create Account</button>
